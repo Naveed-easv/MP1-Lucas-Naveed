@@ -240,6 +240,7 @@
 }
 .terms_text{
     padding-inline: 0.5em;
+    font-size: var(--font-size--1);
 }
 .terms__link{
     color: var(--clr-federal-blue);
