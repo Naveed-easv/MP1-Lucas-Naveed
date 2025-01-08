@@ -63,6 +63,14 @@
     padding: 1em;
 
 }
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(250%);
+    }
+}
 
 /* common styling */
 .title{
@@ -104,36 +112,42 @@
 }
 .hero__image{
     z-index: 1;
+    width: 85%;
 }
-.hero__cloud {
-    z-index: -2;
+.hero__clouds{
     position: absolute;
+    width: 100svw;
+    height: 100svh;
+    z-index: -2;
 }
-.hero__cloud:nth-child(3){
+.hero__cloud:nth-child(1){
     top: 15%;
-    left: 15%;
+    left: 0;
     scale: 1.1;
-    opacity: 0.45;
+    opacity: 0.5;
+    animation: slide 13000ms ease-in-out infinite;
 }
-.hero__cloud:nth-child(4) {
+.hero__cloud:nth-child(2) {
     top: 30%;
-    left: 50%;
-    scale: 0.8;
-    opacity: 0.25;
-    transform: scaleX(-1);
-}
-.hero__cloud:nth-child(5) {
-    top: 50%;
-    left: 55%;
+    left: 0;
     scale: 1.05;
-    opacity: 0.45;
+    opacity: 0.25;
+    animation: slide 13000ms linear infinite;
+
 }
-.hero__cloud:nth-child(6) {
+.hero__cloud:nth-child(3) {
     top: 50%;
     left: 0;
-    scale: 0.6;
+    scale: 1;
+    opacity: 0.35;
+    animation: slide 15000ms ease-in infinite;
+}
+.hero__cloud:nth-child(4) {
+    top: 70%;
+    left: 0;
+    scale: 0.9;
     opacity: 0.15;
-    transform: scaleX(-1);
+    animation: slide 16000ms linear infinite;
 }
 
 /* start screen */
@@ -187,6 +201,10 @@
     fill: var(--clr-federal-blue);
     position: absolute;
     inset: 28px 0 0 1em;
+}
+.backButton__svg:active{
+    background-color: rgba(255, 255, 255, 0.2);
+    transition-duration: 200ms;
 }
 .createAccount__phoneNumber {
     display: flex;
