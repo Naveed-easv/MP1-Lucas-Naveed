@@ -34,6 +34,7 @@
     margin: auto; /* center content */
     width: 100svw;
     height: 100svh;
+    overflow-x: hidden;
     background: 
     linear-gradient(
     #053B72 0%,
