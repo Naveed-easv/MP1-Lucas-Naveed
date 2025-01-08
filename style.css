@@ -336,7 +336,7 @@ input[type="number"] {
 .guide__logo{
     padding-bottom: 1em; /* Adds padding to Nærboks logo, only on the guide page */
 }
-.guide__pic{
+.guide__image{
     width: 100%;
 }
 .guide__text{
