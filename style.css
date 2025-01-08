@@ -68,7 +68,7 @@
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(250%);
+        transform: translateX(200%);
     }
 }
 
@@ -90,12 +90,16 @@
     text-decoration: none;
     font-size: var(--font-size-0);
 }
+.button:hover, .button:active{
+    background-color: rgb(from var(--clr-federal-blue) r g calc(b + 50));
+    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.35));
+    transition-duration: 200ms;
+}
 .section{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* position: relative; */
     row-gap: 1em;
 }
 
@@ -112,42 +116,37 @@
 }
 .hero__image{
     z-index: 1;
-    width: 85%;
+    width: 80%;
 }
 .hero__clouds{
-    position: absolute;
-    width: 100svw;
-    height: 100svh;
     z-index: -2;
 }
+.hero__cloud{
+    position: absolute;
+}
 .hero__cloud:nth-child(1){
-    top: 15%;
-    left: 0;
+    inset: 15% 0 0 0;
     scale: 1.1;
     opacity: 0.5;
     animation: slide 13000ms ease-in-out infinite;
 }
-.hero__cloud:nth-child(2) {
-    top: 30%;
-    left: 0;
-    scale: 1.05;
+.hero__cloud:nth-child(2){
+    inset: 30% 0 0 0;
+    scale: 1.07;
     opacity: 0.25;
-    animation: slide 13000ms linear infinite;
-
+    animation: slide 23000ms linear infinite;
 }
-.hero__cloud:nth-child(3) {
-    top: 50%;
-    left: 0;
-    scale: 1;
+.hero__cloud:nth-child(3){
+    inset: 50% 0 0 0;
+    scale: 1.2;
     opacity: 0.35;
-    animation: slide 15000ms ease-in infinite;
+    animation: slide 15000ms ease-out infinite;
 }
-.hero__cloud:nth-child(4) {
-    top: 70%;
-    left: 0;
-    scale: 0.9;
+.hero__cloud:nth-child(4){
+    inset: 70% 0 0 0;
+    scale: 0.95;
     opacity: 0.15;
-    animation: slide 16000ms linear infinite;
+    animation: slide 22000ms linear infinite;
 }
 
 /* start screen */
@@ -164,11 +163,6 @@
 .start__createAccount{ 
     background-color: hsl(from var(--clr-federal-blue) h s l / 0.9);;
     color: var(--clr-ghost-white);
-}
-.start__createAccount:hover, .start__createAccount:active{
-    background-color: rgb(from var(--clr-federal-blue) r g calc(b + 50));
-    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.35));
-    transition-duration: 200ms;
 }
 .start__divider{
     display: flex;
@@ -202,8 +196,9 @@
     position: absolute;
     inset: 28px 0 0 1em;
 }
-.backButton__svg:active{
-    background-color: rgba(255, 255, 255, 0.2);
+.backButton__svg:hover, .backButton__svg:active{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 40px;
     transition-duration: 200ms;
 }
 .createAccount__phoneNumber {
@@ -252,12 +247,6 @@
 .createAccount__sendCode{
     background-color: hsl(from var(--clr-federal-blue) h s l / 0.9);;
     color: var(--clr-ghost-white);
-}
-
-.createAccount__sendCode:hover, .createAccount__sendCode:active{
-    background-color: rgb(from var(--clr-federal-blue) r g calc(b + 50));
-    filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.35));
-    transition-duration: 200ms;
 }
 .createAccount__codeText{
     color: #000;
