@@ -25,31 +25,33 @@
                 </svg>
             </a>
             <h2 class="title createAccount__title">Opret konto</h2>
-            <div class="createAccount__phoneNumber">
-                <select class="phoneNumber__countryCode">
-                    <option value="+45">+45</option>
-                    <option value="+46">+46</option>
-                    <option value="+47">+47</option>
-                    <option value="+358">+358</option>
-                    <option value="+44">+44</option>
-                    <option value="+49">+49</option>
-                    <option value="+354">+354</option>
-                    <option value="+32">+32</option>
-                    <option value="+48">+48</option>
-                </select>
-                <input type="number" class="phoneNumber__input" placeholder="Telefonnumer">
-            </div>
-            <div class="createAccount__terms">
-                <input type="checkbox" id="terms">
-                <label for="terms" class="terms_text">Jeg accepterer Nærboks
-                    <span class="terms__span">
-                        <a href="#" class="terms__link">betingelser</a>
-                    </span>
-                </label>
-            </div>
-            <a href="activationCode.html" class="button createAccount__sendCode">
-                Send aktiveringskode
-            </a>
+            <form class="createAccount__form">
+                <div class="createAccount__phoneNumber">
+                    <select class="phoneNumber__countryCode">
+                        <option value="+45">+45</option>
+                        <option value="+46">+46</option>
+                        <option value="+47">+47</option>
+                        <option value="+358">+358</option>
+                        <option value="+44">+44</option>
+                        <option value="+49">+49</option>
+                        <option value="+354">+354</option>
+                        <option value="+32">+32</option>
+                        <option value="+48">+48</option>
+                    </select>
+                    <input type="number" class="phoneNumber__input" placeholder="Telefonnumer">
+                </div>
+                <div class="createAccount__terms">
+                    <input type="checkbox" id="terms">
+                    <label for="terms" class="terms_text">Jeg accepterer Nærboks
+                        <span class="terms__span">
+                            <a href="#" class="terms__link">betingelser</a>
+                        </span>
+                    </label>
+                </div>
+                <a href="activationCode.html" class="button createAccount__sendCode">
+                    Send aktiveringskode
+                </a>
+            </form>
             <p class="createAccount__codeText">Din aktiveringskode bliver sendt med SMS</p>
         </section>
     </main>
