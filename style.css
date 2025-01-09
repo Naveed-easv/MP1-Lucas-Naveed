@@ -64,14 +64,6 @@
     padding: 1em;
 
 }
-@keyframes slide {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(200%);
-    }
-}
 
 /* common styling */
 .title{
@@ -145,6 +137,14 @@
     scale: 0.95;
     opacity: 0.15;
 }
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(200%);
+    }
+}
 .hero__cloud--index:nth-child(1){
     inset: 15% 0 0 0;
     animation: slide 13000ms ease-in-out infinite;
@@ -211,7 +211,7 @@
 }
 .backButton__svg:hover, .backButton__svg:active{
     background-color: hsla(0, 0%, 100%, 0.5);
-    border-radius: 40px;
+    border-radius: 8px;
     transition-duration: 200ms;
 }
 .createAccount__phoneNumber {
