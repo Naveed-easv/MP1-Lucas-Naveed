@@ -86,6 +86,7 @@
 .button:hover, .button:active{
     background-color: rgb(from var(--clr-federal-blue) r g calc(b + 50));
     filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.35));
+    scale: 1.05;
     transition-duration: 200ms;
 }
 .section{
@@ -94,6 +95,16 @@
     align-items: center;
     flex-direction: column;
     row-gap: 1em;
+}
+.backButton__svg{
+    fill: var(--clr-federal-blue);
+    position: absolute;
+    inset: 28px 0 0 1em;
+}
+.backButton__svg:hover, .backButton__svg:active{
+    background-color: hsla(0, 0%, 100%, 0.5);
+    border-radius: 8px;
+    transition-duration: 200ms;
 }
 
 /* hero section */
@@ -204,16 +215,6 @@
 }
 
 /* create account page */
-.backButton__svg{
-    fill: var(--clr-federal-blue);
-    position: absolute;
-    inset: 28px 0 0 1em;
-}
-.backButton__svg:hover, .backButton__svg:active{
-    background-color: hsla(0, 0%, 100%, 0.5);
-    border-radius: 8px;
-    transition-duration: 200ms;
-}
 .createAccount__phoneNumber {
     display: flex;
     align-items: center;
