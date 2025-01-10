@@ -228,6 +228,12 @@
     justify-content: center;
     width: 100%;
 }
+.phoneNumber__label{
+    /* label only for screen readers which is hidden for sighted users */
+    position: absolute;
+    height: 1px;
+    overflow: hidden;
+}
 .phoneNumber__countryCode {
     border: none;
     background-color: #CDCDCD;
@@ -254,6 +260,8 @@
 }
 .createAccount__terms{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #terms{
     width: 22px;
