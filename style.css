@@ -152,10 +152,10 @@
 }
 @keyframes slide {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-50vw);
     }
     100% {
-        transform: translateX(200%);
+        transform: translateX(150vw);
     }
 }
 .hero__cloud--index:nth-child(1){
